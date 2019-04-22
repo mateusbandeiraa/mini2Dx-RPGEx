@@ -1,15 +1,19 @@
 package entity;
 
 import org.mini2Dx.core.game.GameContainer;
+import org.mini2Dx.core.graphics.Graphics;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.Texture;
 
 public class Player extends GridObject {
+	
+	private Health health;
 
 	public Player(int x, int y, GameMap map) {
 		super(x, y, new Texture("tanks_tankDesert2.png"), map);
+		health = new Health(10, 10, this);
 	}
 
 	@Override
@@ -38,6 +42,11 @@ public class Player extends GridObject {
 			this.gridX = candidateX;
 			this.gridY = candidateY;
 		}
-
+	}
+	
+	@Override
+	public void render(GameContainer gc, Graphics g) {
+		super.render(gc, g);
+		health.render(gc, g);
 	}
 }
