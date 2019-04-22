@@ -7,7 +7,6 @@ import org.mini2Dx.core.game.GameContainer;
 import org.mini2Dx.core.graphics.Graphics;
 import org.mini2Dx.core.screen.GameScreen;
 import org.mini2Dx.core.screen.ScreenManager;
-import org.mini2Dx.tiled.TileLayer;
 import org.mini2Dx.tiled.TiledMap;
 import org.mini2Dx.tiled.collisions.TiledCollisionMapper;
 
@@ -65,13 +64,7 @@ public class GameMap extends TiledMap {
 	public void removeObject(GameObject o) {
 		objects.remove(o);
 	}
-
-	@Override
-	protected void onLayerRendered(Graphics g, TileLayer layer, int startTileX, int startTileY, int widthInTiles,
-			int heightInTiles) {
-		super.onLayerRendered(g, layer, startTileX, startTileY, widthInTiles, heightInTiles);
-	}
-
+	
 	public byte[][] getCollisions() {
 		return collisions;
 	}
