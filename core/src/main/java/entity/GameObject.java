@@ -4,28 +4,14 @@ import org.mini2Dx.core.game.GameContainer;
 import org.mini2Dx.core.graphics.Graphics;
 
 public abstract class GameObject {
-	private float positionX;
-	private float positionY;
-
 	public abstract void update(GameContainer gc, float delta);
 
 	public abstract void render(GameContainer gc, Graphics g);
 
-	public float getPositionX() {
-		return positionX;
-	}
+	public abstract float getPositionX();
+	public abstract float getPositionY();
 
-	public void setPositionX(float positionX) {
-		this.positionX = positionX;
-	}
+	public abstract float getWidth();
+	public abstract float getHeight();
 
-	public float getPositionY() {
-		return positionY;
-	}
-
-	public void setPositionY(float positionY) {
-		this.positionY = positionY;
-	}
-	
-	
 }

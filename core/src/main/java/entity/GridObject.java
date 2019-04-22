@@ -27,8 +27,8 @@ public abstract class GridObject extends GameObject {
 
 	@Override
 	public void update(GameContainer gc, float delta) {
-		sprite.setX(map.getPositionXbyTile(gridX));
-		sprite.setY(map.getPositionYbyTile(gridY));
+		this.setGridX(gridX);
+		this.setGridY(gridY);
 	}
 
 	@Override
@@ -42,6 +42,21 @@ public abstract class GridObject extends GameObject {
 
 	public void setGridX(int gridX) {
 		this.gridX = gridX;
+		this.setPositionX(map.getPositionXbyTile(gridX));
+	}
+
+	@Override
+	public float getPositionX() {
+		return sprite.getX();
+	}
+
+	public void setPositionX(float positionX) {
+		this.sprite.setX(positionX);
+	}
+
+	@Override
+	public float getWidth() {
+		return sprite.getWidth();
 	}
 
 	public int getGridY() {
@@ -50,6 +65,21 @@ public abstract class GridObject extends GameObject {
 
 	public void setGridY(int gridY) {
 		this.gridY = gridY;
+		this.setPositionY(map.getPositionYbyTile(gridY));
+	}
+
+	@Override
+	public float getPositionY() {
+		return sprite.getY();
+	}
+
+	public void setPositionY(float positionY) {
+		this.sprite.setY(positionY);
+	}
+
+	@Override
+	public float getHeight() {
+		return sprite.getHeight();
 	}
 
 }
