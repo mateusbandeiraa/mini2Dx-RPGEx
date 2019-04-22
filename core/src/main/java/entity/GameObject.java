@@ -10,4 +10,22 @@ public abstract class GameObject {
 	public abstract void update(GameContainer gc, float delta);
 
 	public abstract void render(GameContainer gc, Graphics g);
+
+	public float getPositionX() {
+		return positionX;
+	}
+
+	public void setPositionX(float positionX) {
+		this.positionX = positionX;
+	}
+
+	public float getPositionY() {
+		return positionY;
+	}
+
+	public void setPositionY(float positionY) {
+		this.positionY = positionY;
+	}
+	
+	
 }
