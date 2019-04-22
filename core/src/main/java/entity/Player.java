@@ -42,6 +42,8 @@ public class Player extends GridObject {
 			this.gridX = candidateX;
 			this.gridY = candidateY;
 		}
+		
+		health.update(gc, delta);
 	}
 	
 	@Override
