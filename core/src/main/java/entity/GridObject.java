@@ -11,12 +11,12 @@ public abstract class GridObject extends GameObject {
 	protected GameMap map;
 	protected int gridX;
 	protected int gridY;
-	protected int dimensions = 16;
+	protected static final float INITIAL_DIMENSIONS = 16f;
 
 	public GridObject(Texture texture, GameMap map) {
 		this.map = map;
 		sprite = new Sprite(texture);
-		sprite.setSize(dimensions, dimensions);
+		sprite.setSize(INITIAL_DIMENSIONS, INITIAL_DIMENSIONS);
 	}
 
 	public GridObject(int x, int y, Texture texture, GameMap map) {
