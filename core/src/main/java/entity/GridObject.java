@@ -50,7 +50,7 @@ public abstract class GridObject extends GameObject {
 		return sprite.getX();
 	}
 
-	public void setPositionX(float positionX) {
+	private void setPositionX(float positionX) {
 		this.sprite.setX(positionX);
 	}
 
@@ -73,7 +73,7 @@ public abstract class GridObject extends GameObject {
 		return sprite.getY();
 	}
 
-	public void setPositionY(float positionY) {
+	private void setPositionY(float positionY) {
 		this.sprite.setY(positionY);
 	}
 
