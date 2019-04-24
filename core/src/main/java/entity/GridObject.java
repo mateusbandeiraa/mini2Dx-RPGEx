@@ -13,7 +13,7 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
  * um {@link GameMap}.
  * 
  * @author Mateus Bandeira
- * @date 23/04/19
+ * Criado em 23/04/19
  *
  */
 public abstract class GridObject extends GameObject {
