@@ -16,11 +16,11 @@ import com.badlogic.gdx.files.FileHandle;
 /**
  * Representa um mapa de <code>Tile</code>s.
  * 
+ * Criado em 23/04/19
+ * 
  * @author Mateus Bandeira
  * @see TiledMap
  * @see Tile
- * 
- * Criado em 23/04/19
  */
 public class GameMap extends TiledMap {
 	/**

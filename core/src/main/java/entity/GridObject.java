@@ -12,9 +12,9 @@ import com.badlogic.gdx.maps.tiled.TiledMap;
  * Representa um {@link GameObject} cuja posição está vinculada ao grid de
  * um {@link GameMap}.
  * 
- * @author Mateus Bandeira
  * Criado em 23/04/19
- *
+ * 
+ * @author Mateus Bandeira
  */
 public abstract class GridObject extends GameObject {
 	/**

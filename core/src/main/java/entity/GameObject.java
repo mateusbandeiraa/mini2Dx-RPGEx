@@ -7,9 +7,9 @@ import org.mini2Dx.core.screen.GameScreen;
 /**
  * Representa um objeto renderizável.
  * 
- * @author Mateus Bandeira
  * Criado em 23/04/19
- *
+ * 
+ * @author Mateus Bandeira
  */
 public abstract class GameObject {
 	/**
