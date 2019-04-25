@@ -20,7 +20,7 @@ import com.badlogic.gdx.files.FileHandle;
  * @see TiledMap
  * @see Tile
  * 
- *      Criado em 23/04/19
+ * Criado em 23/04/19
  */
 public class GameMap extends TiledMap {
 	/**
